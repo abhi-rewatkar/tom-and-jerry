@@ -1,0 +1,54 @@
+body {
+    margin: 180px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b97777;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 60%;
+    height: 40%;
+}
+
+.tom, .jerry {
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    height: auto;
+}
+
+.tom {
+    animation: moveTom 10s linear infinite;
+}
+
+.jerry {
+    animation: moveJerry 10s linear infinite;
+}
+
+@keyframes moveTom {
+    0% {
+        left: -100px;
+    }
+    50% {
+        left: 400px;
+    }
+    100% {
+        left: -100px;
+    }
+}
+
+@keyframes moveJerry {
+    0% {
+        left: 100px;
+    }
+    50% {
+        left: -400px;
+    }
+    100% {
+        left: 100px;
+    }
+}
